@@ -1,0 +1,19 @@
+﻿<Window x:Class="ClientWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1349" WindowState="Maximized" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Button FontSize="20" Content="Войти" Name="button_enter" HorizontalAlignment="Left" Margin="428,332,0,0" VerticalAlignment="Top" Height="52" Width="636" Click="button_enter_Click" />
+        <TextBox Name="textBoxLogin" InputLanguageManager.InputLanguage="en_US" FontSize="20" HorizontalAlignment="Left" Margin="235,142,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="1023"/>
+        <Label FontSize="25" Content="Login" HorizontalAlignment="Left" Margin="133,136,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="25" Content="Password" HorizontalAlignment="Left" Margin="91,200,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="20" Content="Нет учётной записи?" HorizontalAlignment="Left" Margin="647,449,0,0" VerticalAlignment="Top"/>
+        <Button Name="buttonRegister" Click="buttonRegister_Click" Style="{StaticResource MaterialDesignFlatLightBgButton}" FontSize="20" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="428,484,0,0" VerticalAlignment="Top" Height="52" Width="636" />
+        <PasswordBox InputLanguageManager.InputLanguage="en_US" Name="passwordBox" FontSize="20" HorizontalAlignment="Left" Margin="234,206,0,0" VerticalAlignment="Top" Width="1024"/>
+
+    </Grid>
+</Window>

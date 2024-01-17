@@ -1,0 +1,70 @@
+﻿<Window x:Class="ClientWpf.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWpf"
+        mc:Ignorable="d"
+        BorderBrush="Black"
+        Title="Window2" Height="406" Width="821"  WindowStyle="None">
+    <Grid Name="Grid">
+        <RadioButton Checked="radioButton_Checked" Name="radioButton_a" FontSize="16"  HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" Height="53">
+            <RadioButton.Content>
+                <TextBlock TextWrapping="Wrap" Text="a) Месячный план выпуска каждого из изделий (по отдельности и совместно) увеличить (или уменьшить) на 10 %" Height="51"/>
+            </RadioButton.Content>
+        </RadioButton>
+        <CheckBox Name="checkBox_x1_a"  Content="x1" HorizontalAlignment="Left" Margin="39,125,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="16" Content="Обозначим первый вид изделий как х1, второй -- как х2, третий -- как х3" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="checkBox_x2_a" Content="x2" HorizontalAlignment="Left" Margin="338,125,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="checkBox_x3_a" Content="x3" HorizontalAlignment="Left" Margin="651,125,0,0" VerticalAlignment="Top"/>
+
+        <ComboBox Name= "comboBox_x1_a" IsReadOnly="True" HorizontalAlignment="Left" Margin="76,120,0,0" VerticalAlignment="Top" Width="102">
+            <ComboBoxItem Content=" "/>
+            <ComboBoxItem Content="+ 10%"/>
+            <ComboBoxItem Content="- 10%"/>
+        </ComboBox>
+
+        <ComboBox Name="comboBox_x2_a" IsReadOnly="True" HorizontalAlignment="Left" Margin="375,120,0,0" VerticalAlignment="Top" Width="102">
+            <ComboBoxItem Content=" "/>
+            <ComboBoxItem Content="+ 10%"/>
+            <ComboBoxItem Content="- 10%"/>
+        </ComboBox>
+
+        <ComboBox Name="comboBox_x3_a" IsReadOnly="True" HorizontalAlignment="Left" Margin="688,120,0,0" VerticalAlignment="Top" Width="102">
+            <ComboBoxItem Content=" "/>
+            <ComboBoxItem Content="+ 10%"/>
+            <ComboBoxItem Content="- 10%"/>
+        </ComboBox>
+
+        <RadioButton Checked="radioButton_Checked" Name="radioButton_b" FontSize="16"  HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" Height="53" Width="780">
+            <TextBlock TextWrapping="Wrap" Text="б) Из-за конкуренции на рынке цена любого изделия увеличилась (уменьшилась) на 10 %" Height="51" Width="770"/>
+        </RadioButton>
+
+        <CheckBox x:Name="checkBox_x1_b"  Content="x1" HorizontalAlignment="Left" Margin="39,252,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name= "comboBox_x1_b" IsReadOnly="True" HorizontalAlignment="Left" Margin="76,249,0,0" VerticalAlignment="Top" Width="102">
+            <ComboBoxItem Content=" "/>
+            <ComboBoxItem Content="+ 10%"/>
+            <ComboBoxItem Content="- 10%"/>
+        </ComboBox>
+
+        <CheckBox x:Name="checkBox_x2_b"  Content="x2" HorizontalAlignment="Left" Margin="338,247,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name= "comboBox_x2_b" IsReadOnly="True" HorizontalAlignment="Left" Margin="375,244,0,0" VerticalAlignment="Top" Width="102">
+            <ComboBoxItem Content=" "/>
+            <ComboBoxItem Content="+ 10%"/>
+            <ComboBoxItem Content="- 10%"/>
+        </ComboBox>
+
+        <CheckBox x:Name="checkBox_x3_b"  Content="x3" HorizontalAlignment="Left" Margin="651,247,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name= "comboBox_x3_b" IsReadOnly="True" HorizontalAlignment="Left" Margin="688,244,0,0" VerticalAlignment="Top" Width="102">
+            <ComboBoxItem Content=" "/>
+            <ComboBoxItem Content="+ 10%"/>
+            <ComboBoxItem Content="- 10%"/>
+        </ComboBox>
+        <RadioButton Checked="radioButton_Checked" x:Name="radioButton_с" FontSize="16"  HorizontalAlignment="Center" Margin="0,285,0,0" VerticalAlignment="Top" Height="53" Width="780">
+            <TextBlock TextWrapping="Wrap" Text="в) месячный расход материала возрос на 10 %; найти теневую цену материала" Height="51" Width="770"/>
+        </RadioButton>
+        <Button Click="button_OK_Click" Name="button_OK" FontSize="18" Content="ОК" HorizontalAlignment="Left" Margin="304,348,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button Click="button_Cancel_Click" Name="button_Cancel" FontSize="18" Content="Отмена" HorizontalAlignment="Left" Margin="402,348,0,0" VerticalAlignment="Top" Width="143"/>
+
+    </Grid>
+</Window>
